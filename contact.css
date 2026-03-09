@@ -1,0 +1,234 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+@media (max-width: 600px) {
+ 
+  }
+
+a {
+    text-decoration: none;
+
+}
+/* ===== NAVBAR ===== */
+.header{
+    position: sticky;
+    top:0;
+    background:rgb(7, 3, 66);
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+    z-index:1000;
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 80px;
+    text-decoration: none;
+}
+
+.logo{
+    color:#0a66c2;
+    font-size:24px;
+    font-weight:bold;
+    font-style: italic;
+}
+
+.nav-links{
+    list-style:none;
+    display:flex;
+    gap:30px;
+}
+
+
+button{
+    font-size:18px;
+    border-radius:80px;
+    color:white;
+    
+    background:transparent;
+border: rgb(7, 3, 66);;
+    padding:10px 20px;
+    transition:0.4s;
+}
+
+button:hover{
+    background:linear-gradient(135deg,#a855f7,#6d28d9);
+    box-shadow:0 0 20px #a855f7;
+    transform:translateY(-4px);
+    cursor: pointer;
+}
+
+button:active{
+    color:rgb(33, 2, 42);
+
+    background:linear-gradient(
+        135deg,
+        #5fd0ff,
+        #2b6cb0
+    );
+
+    box-shadow:
+        0 0 25px rgba(95,208,255,0.7),
+        0 0 60px rgba(95,208,255,0.4);
+}
+
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* BACKGROUND */
+body {
+    height: 100vh;
+
+    /* Multiple background layers */
+    background:
+        /* vertical grid lines */
+        repeating-linear-gradient(
+            to right,
+            rgba(255,255,255,0.05) 0px,
+            rgba(255,255,255,0.05) 1px,
+            transparent 1px,
+            transparent 80px
+        ),
+
+        /* horizontal grid lines */
+        repeating-linear-gradient(
+            to bottom,
+            rgba(255,255,255,0.05) 0px,
+            rgba(255,255,255,0.05) 1px,
+            transparent 1px,
+            transparent 80px
+        ),
+
+        /* dark blue gradient */
+        radial-gradient(circle at top left,
+            #0b1d3a,
+            #020617
+        );
+
+    background-color: #020617;
+}
+
+
+/* MAIN SECTION */
+.contact{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    padding:80px 10%;
+    min-height:100vh;
+}
+
+/* LEFT SIDE */
+.contact-info{
+    width:45%;
+    color: aliceblue;
+}
+
+.contact-info h1{
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+.subtitle{
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+.contact-info p{
+    margin-bottom:15px;
+    line-height:1.6;
+}
+
+.contact-info a{
+    color:white;
+    text-decoration:underline;
+}
+
+.socials a{
+    color:rgb(249, 245, 245);
+    font-size:28px;
+    margin-right:20px;
+    transition:0.3s;
+}
+
+.socials a:hover{
+    color:#00c3ff;
+    transform:scale(1.2);
+}
+
+/* RIGHT SIDE FORM */
+.contact-form{
+    width:45%;
+    color: aliceblue;
+}
+
+form input,
+form textarea{
+    width:100%;
+    padding:10px;
+    margin:10px 0;
+    border:none;
+    outline:none;
+}
+
+.row{
+    display:flex;
+    gap:10px;
+}
+
+.checkbox{
+    margin:10px 0;
+}
+
+.checkbox label{
+    display:block;
+    margin-bottom:5px;
+}
+
+textarea{
+    height:100px;
+    resize:none;
+}
+
+/* BUTTON */
+.send{
+    background:white;
+    color:#246ea1;
+    border:none;
+    padding:10px 20px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    transform:translateY(-3px);
+}
+footer{
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+.footer-links a,
+.socials a{
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+}
+.footer-links a:hover,
+.socials a:hover{
+    color: purple;
+}
+.copy{
+    margin-top: 20px;
+    font-size: 14px;
+    color:#aaa;
+}

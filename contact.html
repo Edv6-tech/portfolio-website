@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+
+    <!-- ICON LIBRARY -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <header class="header">
+
+    <nav class="navbar">
+        <h2 class="logo">Nahbila Faith</h2>
+
+        <ul class="nav-links">
+            <a href="home.html"><button>Home </button></A>
+           <a  href="about.html"><button>About</button></a>
+            <a href="project.html"><button >Projects</button></a>
+            <a href="contact.html"><button >Contact</button></a>
+        </ul>
+    </nav>
+
+</header>
+
+
+<section class="contact">
+
+    <!-- LEFT SIDE -->
+    <div class="contact-info">
+        <h1>Contact me!</h1>
+
+        <p class="subtitle">
+            Have any questions? Fill out the form and I’ll get you a response soon!
+        </p>
+
+        <p>
+            Feel free to ask anything about school, internships,
+            projects, tech, or how to start your journey.
+        </p>
+
+        <p>
+            Simply leave me a message or email me directly.
+        </p>
+
+        <a href="#">nahbilafaith@email.com</a>
+
+        <div class="socials">
+            <a href="https://linkedin.com/in/yourprofile" target="_blank">
+        <i class="fab fa-linkedin"></i>
+    </a>
+
+    <a href="https://wa.me/237XXXXXXXXX" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <a href="https://facebook.com/yourprofile" target="_blank">
+        <i class="fab fa-facebook"></i>
+    </a>
+
+        </div>
+    </div>
+
+
+    <!-- RIGHT SIDE -->
+    <div class="contact-form">
+
+        <form  id="contactForm" action="contact.php" method="POST">
+
+            <div class="row">
+                <input type="text" name="first_name" placeholder="First Name" required>
+                <input type="text"  name="last_name" placeholder="Last Name" required>
+            </div>
+
+            <input type="email" name="email" placeholder="Email" required>
+
+            <label>Which are you?</label>
+
+            <div class="checkbox">
+          <input type="checkbox" name="user_type" value="Student"> Student
+<input type="checkbox" name="user_type" value="Recruiter"> Recruiter
+<input type="checkbox" name="user_type" value="Company"> Company
+<input type="checkbox" name="user_type" value="Other"> Other
+            </div>
+
+            <textarea name="message" placeholder="Message"></textarea>
+
+            <button class="send" type="submit">Send</button>
+
+        </form>
+
+    </div>
+
+</section>
+
+<footer >
+    <h2>Nahbila Faith</h2>
+<div class="footer-links">
+        <a href="home.html">Home</a>
+         <a href="about.html">About</a> 
+         <a href="project.html">Projects</a> 
+        
+    </div>
+    <div class="socials">
+         <a href="https://github.com/Edv6-tech">Github</a>
+          <a href="https://www.linkedin.com/in/nahbila-faith-0b5707381">linkedIn</a>
+           <a href="mailto:nahbilafaith789@gmail.con">Email</a>
+    </div>
+
+    <p class="copy">
+        @2026 Nahbila Faith
+    </p>
+</footer>
+<script>
+
+const params = new URLSearchParams(window.location.search);
+
+if (params.get("sent") === "1") {
+    alert("Message sent successfully!");
+}
+
+</script>
+
+</script>
+</body>
+</html>
