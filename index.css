@@ -327,7 +327,6 @@ body {
 
     transition: 0.3s ease;
     
-    /* animation running always */
     animation: pulse 2s infinite;
 }
 
